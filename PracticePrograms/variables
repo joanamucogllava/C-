@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string charName = "Edlira";
+    int charChildren;
+    charChildren = 2;
+    cout << "Once upon a time, there was a mom called " << charName << endl;
+    cout << charName << " has " << charChildren << " children." << endl;
+    cout << "She wanted to have more than " << charChildren << " children. " << endl;
+    cout << "But " << charName << " could't have more than 2 kids. " << endl;
+
+
+return 0;
+
+}
