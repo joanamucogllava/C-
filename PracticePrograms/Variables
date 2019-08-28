@@ -1,0 +1,27 @@
+// MyFirstCppAplication.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int sum, a, b;
+
+	cout << "Inset a value for a: " << endl;
+	cin >> a;
+
+	cout << "Insert a value for b: " << endl;
+	cin >> b;
+
+
+	sum = a + b / a ;
+
+	cout << "The result is: " << sum << endl;
+	
+
+	system("pause");
+    return 0;
+}
