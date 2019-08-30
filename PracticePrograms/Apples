@@ -1,0 +1,27 @@
+/* MyFistAssigment.cpp : This program will calculate the total number of the apples and the oney collected by selling all of them.
+   Author: Joana Mucogllava
+   Date: 08/30/2019
+*/
+
+#include <iostream>
+
+int main()
+{
+	int apples_in_box, boxes, price_per_box;
+	int total_apples, total_price;
+
+	apples_in_box = 6;
+	boxes = 30;
+	price_per_box = 20;
+
+	total_apples = apples_in_box * boxes;
+	total_price = boxes * price_per_box;
+	
+    std::cout << "Total number of apples in all boxes is " << total_apples << "\n";
+	std::cout << "Total apples will be sold for $ " << total_price <<"\n";
+
+	system("pause");
+	return 0;
+}
+
+
