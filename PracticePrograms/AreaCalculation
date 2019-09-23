@@ -1,0 +1,22 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//This program will calculate the area by gethering the date from the user. 
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	double area, height, width;
+
+	cout << "Enter the value of the height: " << endl;
+	cin >> height;
+	cout << "Enter the value of the width: " << endl; 
+	cin >> width;
+	
+	area = height * width;
+	cout << "The value of the area is: " << area << endl ;
+	system("pause");
+    return 0;
+}
