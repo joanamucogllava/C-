@@ -1,0 +1,41 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+#include<iomanip>
+
+using namespace std;
+
+int main()
+{
+	int points;
+
+	cout << "Enter the points of your assigment: " << endl;
+	cin >> points;
+
+	if (points >= 90 && points <= 100)
+	{
+		cout << "You received an A" << endl;
+	}
+	else if (points >= 80 && points <= 89)
+	{
+		cout << "You received a B" << endl;
+	}
+	else if (points >= 70 && points <= 79)
+	{
+		cout << "You received a C" << endl;
+	}
+	else if (points >= 60 && points <= 69)
+	{
+		cout << "You received a D" << endl;
+	}
+	else
+		cout << "You failed";
+	
+			
+	system("pause");
+
+    return 0;
+}
+
