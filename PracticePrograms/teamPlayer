@@ -1,0 +1,38 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+
+using namespace std;
+
+
+int main()
+{
+	int teamPlayers;
+	int players = 0; 
+	const int MIN_PLAYERS = 6;
+	const int MAX_PLAYERS = 12;
+
+	cout << "How many players do you wish per team? ";
+	cin >> teamPlayers;
+
+	while (teamPlayers < MIN_PLAYERS || teamPlayers > MAX_PLAYERS)
+	{
+		cout << "You should have at least " << MIN_PLAYERS
+			<< " but no more than " << MAX_PLAYERS << " per team.\n ";
+
+		cout << "How many players do you wish per team? ";
+		cin >> teamPlayers;
+	}
+		cout << "How many players are available?  ";
+		cin >> players;
+	
+		while (players <= 0)
+		{
+			cout << "Please enter 0 or greater: ";
+			cin >> players;
+		}
+	system("pause");
+    return 0;
+}
