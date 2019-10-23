@@ -1,0 +1,24 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+
+using namespace std;
+
+
+int main()
+{
+	int number;
+	cout << "Enter a number less than 10: ";
+	cin >> number;
+	while (number >= 10)
+	{
+		cout << "Invalid Entery! "
+			<< "Enter a number less than 10: ";
+		cin >> number;
+	}
+	system("pause");
+    return 0;
+}
+
