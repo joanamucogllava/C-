@@ -1,0 +1,31 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	int game = 1,
+		points,
+		total = 0;
+
+	cout << "Enter the number of the points your team has earned\n";
+	cout << "so far in the season, then enetr -1 when finished. \n\n";
+	cout << "Enter the pints for game " << game << ": ";
+	cin >> points;
+
+	while (points != -1)
+	{
+		total += points;
+		game++;
+		cout << "Enter the pints for game " << game << ": ";
+		cin >> points;
+	}
+	cout << "\nThe total points are " << total << endl;
+	system("pause");
+    return 0;
+}
+
