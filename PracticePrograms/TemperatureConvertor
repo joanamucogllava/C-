@@ -1,0 +1,22 @@
+// TemperatureConvertor: This program will convert the the temperature from Celcius to Fahrenheit.
+//
+
+#include <iostream>
+  
+using namespace std;
+
+double Celcius;
+double Fahrenheit;
+
+int main()
+{
+	cout << "Please enter the temperature in Celcuis: " << endl;
+	cin >> Celcius;
+
+	Fahrenheit = (9 / 5) * Celcius + 32;
+
+	cout << "The temperature converted in Fahreneit is " << Fahrenheit << endl; 
+
+	system("pause");
+	return 0;
+}
